@@ -57,7 +57,7 @@ src/
 
 ## Live Demo
 
-View the live demo here: [Live Demo](https://your-demo-link.com)
+View the live demo here: [Live Demo](https://biblecategories.netlify.app/)
 
 ## Contact
 
