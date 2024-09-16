@@ -1,0 +1,39 @@
+{
+    "Faith": [
+      {
+        "verse": "Now faith is the assurance of things hoped for, the conviction of things not seen.",
+        "reference": "Hebrews 11:1",
+        "version": "NIV"
+      },
+      {
+        "verse": "For we walk by faith, not by sight.",
+        "reference": "2 Corinthians 5:7",
+        "version": "KJV"
+      }
+    ],
+    "Love": [
+      {
+        "verse": "Love is patient, love is kind. It does not envy, it does not boast, it is not proud.",
+        "reference": "1 Corinthians 13:4",
+        "version": "NIV"
+      },
+      {
+        "verse": "And now these three remain: faith, hope, and love. But the greatest of these is love.",
+        "reference": "1 Corinthians 13:13",
+        "version": "ESV"
+      }
+    ],
+    "Understanding": [
+      {
+        "verse": "The beginning of wisdom is this: Get wisdom. Though it cost all you have, get understanding.",
+        "reference": "Proverbs 4:7",
+        "version": "NIV"
+      },
+      {
+        "verse": "Trust in the Lord with all your heart and lean not on your own understanding.",
+        "reference": "Proverbs 3:5",
+        "version": "KJV"
+      }
+    ]
+  }
+  
