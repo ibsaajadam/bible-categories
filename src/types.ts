@@ -1,6 +1,4 @@
-export interface Verse {
-    verse: string;
-    reference: string;
-    version: string;
-  }
-  
+export interface Quote {
+  quote: string;
+  author: string;
+}

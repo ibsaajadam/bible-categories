@@ -1,11 +1,10 @@
-# Bible Categories App
+# Motivational Categories App
 
-A React and TypeScript application that allows users to browse different Bible categories and view related Bible verses. Verses are stored in a JSON file, with references and versions displayed when selected. The site is designed with Bootstrap for responsive layouts.
+A React and TypeScript application that allows users to browse different Motivational Quote categories and view related quotes. Quotes are stored in a JSON file, with references and versions displayed when selected. The site is designed with Bootstrap for responsive layouts.
 
 ## Table of contents
 
 - [Technologies](#technologies)
-- [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
 - [Screenshots](#screenshots)
 - [Live Demo](#live-demo)
@@ -14,21 +13,6 @@ A React and TypeScript application that allows users to browse different Bible c
 ## Technologies
 
 - React, TypeScript, Bootstrap, CSS, and JSON.
-
-## Project Structure
-
-src/
-├── components/
-│   ├── BibleCategory.tsx        # Displays Bible categories as clickable cards
-│   ├── VerseList.tsx            # Displays Bible verses for the selected category
-├── pages/
-│   └── HomePage.tsx             # Main page that displays categories and verses
-├── data/
-│   └── bibleVerses.json         # Stores Bible verses and their categories
-├── types/
-│   └── types.ts                 # Defines shared types, e.g., Verse interface
-├── App.tsx                      # Entry point for the app
-└── index.tsx                    # Renders the app into the DOM
 
 ## Setup Instructions
 
@@ -57,7 +41,7 @@ src/
 
 ## Live Demo
 
-View the live demo here: [Live Demo](https://biblecategories.netlify.app/)
+View the live demo here: [Live Demo](https://motivational-quotes123.netlify.app/)
 
 ## Contact
 

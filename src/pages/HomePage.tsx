@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
-import BibleCategory from '../components/BibleCategory';
-import VerseList from '../components/VerseList';
-import versesData from '../data/bibleVerses.json';
-import { Verse } from '../types';
+import QuoteList from '../components/QuoteList';
+import quotesData from '../data/quotes.json';
+import { Quote } from '../types';
 
 const HomePage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [verses, setVerses] = useState<Verse[]>([]);
+  const [quotes, setQuotes] = useState<Quote[]>([]);
 
-  const categories = Object.keys(versesData);
+  const categories = Object.keys(quotesData);
 
   const handleSelectCategory = (category: string) => {
     if (category === selectedCategory) {
       setSelectedCategory(null);
-      setVerses([]);
+      setQuotes([]);
     } else {
       setSelectedCategory(category);
-      setVerses(versesData[category as keyof typeof versesData] as Verse[]);
+      setQuotes(quotesData[category as keyof typeof quotesData] as Quote[]);
     }
   };
 
@@ -31,21 +30,42 @@ const HomePage: React.FC = () => {
     >
       <div className="container">
         <h1 style={{ color: '#ffffff', textAlign: 'center', marginBottom: '30px' }}>
-          Bible Categories
+          Motivational Quote Categories
         </h1>
 
-        <BibleCategory
-          categories={categories}
-          onSelectCategory={handleSelectCategory}
-          selectedCategory={selectedCategory}
-        />
+        <div className="row justify-content-center">
+          {categories.map((category) => (
+            <div
+              key={category}
+              className="col-lg-4 col-md-6 col-12 mb-4"
+              style={{ display: 'flex', justifyContent: 'center' }}
+            >
+              <button
+                onClick={() => handleSelectCategory(category)}
+                style={{
+                  width: '100%',
+                  padding: '20px',
+                  fontSize: '18px',
+                  backgroundColor: selectedCategory === category ? '#6a0dad' : '#8a2be2',
+                  color: '#ffffff',
+                  border: 'none',
+                  borderRadius: '10px',
+                  cursor: 'pointer',
+                  textAlign: 'center',
+                }}
+              >
+                {category}
+              </button>
+            </div>
+          ))}
+        </div>
 
-        {selectedCategory && verses.length > 0 && (
+        {selectedCategory && quotes.length > 0 && (
           <>
             <h2 style={{ color: '#ffffff', textAlign: 'center', marginTop: '30px' }}>
-              Bible Verses on {selectedCategory}
+              Motivational Quotes on {selectedCategory}
             </h2>
-            <VerseList verses={verses} />
+            <QuoteList quotes={quotes} />
           </>
         )}
       </div>

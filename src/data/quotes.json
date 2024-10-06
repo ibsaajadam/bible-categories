@@ -1,0 +1,32 @@
+{
+  "Faith": [
+    {
+      "quote": "Faith is taking the first step even when you don't see the whole staircase.",
+      "author": "Martin Luther King Jr."
+    },
+    {
+      "quote": "Faith is to believe what you do not see; the reward of this faith is to see what you believe.",
+      "author": "Saint Augustine"
+    }
+  ],
+  "Love": [
+    {
+      "quote": "Where there is love, there is life.",
+      "author": "Mahatma Gandhi"
+    },
+    {
+      "quote": "Love isn't something you find. Love is something that finds you.",
+      "author": "Loretta Young"
+    }
+  ],
+  "Understanding": [
+    {
+      "quote": "Peace cannot be kept by force; it can only be achieved by understanding.",
+      "author": "Albert Einstein"
+    },
+    {
+      "quote": "Understanding is the first step to acceptance, and only with acceptance can there be recovery.",
+      "author": "J.K. Rowling"
+    }
+  ]
+}
